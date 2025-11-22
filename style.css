@@ -114,7 +114,7 @@ main {
   color: white;
  
 }
-#perfil, #misiones, #contacto #habilidades h2 {
+#perfil, #misiones, #contacto, #habilidades h2 {
   font-size: 2em;
   margin-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -560,7 +560,6 @@ footer {
   padding: 5px 10px;
   font-family: var(--text-font);
   cursor: pointer;
-  /*transition: border-color 0.3s ease;*/
 }
 #language:hover {
   border-color: #DB8DE0;
@@ -669,15 +668,28 @@ footer {
         width: 35px;
         height: 35px;
     }
+    #perfil h2 {
+      font-size: 1.5em;
+    }
 
     /* Perfil móvil */
     .rectangulo {
         padding: 20px;
-        gap
+        gap: 20px
     }
     .contenedor img{
       height: 300px;
       width: 225px;
+  }
+  #nombre {
+    font-size: 1.2em;
+  }
+  .texto-contenido p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  #misiones h2 {
+    font-size: 1.5em;
   }
   .misiones-container {
     grid-template-columns: 1fr;
@@ -685,6 +697,15 @@ footer {
   }
   .mision {
     max-width: 100%;
+  }
+  .mision h3 {
+    font-size: 1.2em;
+  }
+  .xp, .dificultad {
+    font-size: 0.75em;
+  }
+  #habilidades h2 {
+    font-size: 1.5em;
   }
 .habilidad {
   flex-direction: column;
@@ -773,45 +794,7 @@ footer {
     }
 } 
 
-
-@media (max-width: 1024px) {
-  .nav-cookies {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-  }
-  
-  .footer-logo {
-    order: 1;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .footer-logo img {
-    margin: 0 auto;
-  }
-  
-  .copyright {
-    order: 2;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .languageList {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .language-selector {
-    order: 4;
-    width: 100%;
-    justify-content: center;
-  }
-}
-/* Responsive para móviles *//*
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .nav-cookies {
     flex-wrap: wrap;
     justify-content: center;
@@ -847,6 +830,7 @@ footer {
     justify-content: center;
   }
 }*/
+
 /*
 Separación:
 
