@@ -1,9 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #764ba2;
   --second-color: #c4a1c6;
@@ -12,15 +12,15 @@
   --text-font: "Century Gothic", sans-serif;
 }
 
-body{
-  /*margin: 0;*/
+body {
   font-family: sans-serif;
   background: #2d1b3d;
   min-height: 100vh;
 
 }
+
 .navbar {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
@@ -29,28 +29,27 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  /*width: 100%;*/
   height: 80px;
   z-index: 1000;
-  /*box-sizing: border-box;*/
-  
 }
+
 .logo img {
   height: 80px;
-  width: auto;/*Nuevo*/
+  width: auto;
 }
+
 .nav-links {
   display: flex;
-  gap: 400px; /*40*/
+  gap: 400px;
   list-style: none;
-  position: absolute; 
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   justify-content: space-between;
 }
 
 
-.nav-links a{
+.nav-links a {
   font-family: papyrus;
   color: white;
   font-size: 20px;
@@ -58,13 +57,15 @@ body{
   text-decoration: none;
   transition: color 0.3s;
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
   color: #DB8DE0;
 }
 
 main {
   padding-top: 80px;
 }
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -73,19 +74,21 @@ main {
   text-align: center;
   padding: 60px 20px;
   gap: 30px;
-  
+
 }
+
 #hero h1 {
   font-family: var(--font-family);
   font-size: 40px;
   color: white;
-  
+
 }
+
 #hero .btn {
-  
+
   font-size: 30px;
   font-family: var(--font-family);
-  transition:  .3s linear;
+  transition: .3s linear;
   cursor: pointer;
   background-color: black;
   color: white;
@@ -95,38 +98,49 @@ main {
   padding: 15px 30px;
   border: 4px solid #c4a1c6;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #5D859E;
-  box-shadow: 
-  0 0 5px #5D859E, 0 0 300px #DB8DE0, 0 0 50px blueviolet, 0 0 100px #431922, 0 0 300px #BA8DE0;
+  box-shadow:
+    0 0 5px #5D859E, 0 0 300px #DB8DE0, 0 0 50px blueviolet, 0 0 100px #431922, 0 0 300px #BA8DE0;
 }
+
 #hero .mando {
-  width: 55px;         
+  width: 55px;
   height: 55px;
   object-fit: contain;
 }
-#perfil, #misiones, #contacto {
+
+#perfil,
+#misiones,
+#contacto {
   font-family: var(--font-family);
   margin: 40px 20px;
   padding: 20px;
   text-align: center;
   scroll-margin-top: 100px;
   color: white;
- 
+
 }
-#perfil, #misiones, #contacto, #habilidades h2 {
-  font-size: 2em;
+
+#perfil,
+#misiones,
+#contacto,
+#habilidades h2 {
+  font-size: 1.2em;
   margin-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   color: white;
 }
+
 .perfil {
   display: flex;
   justify-content: center;
   margin: 20px auto;
   max-width: 1200px;
- 
+
 }
+
 .rectangulo {
   width: 100%;
   background-color: rgb(18, 18, 19);
@@ -135,48 +149,63 @@ main {
   display: flex;
   align-items: center;
   gap: 40px;
-  
- }
-.contenedor{
-  flex-shrink: 0;
-  
+
 }
-.contenedor img{
+
+.contenedor {
+  flex-shrink: 0;
+
+}
+
+.contenedor img {
   height: 400px;
   width: 300px;
   object-fit: cover;
   box-shadow: rgba(222, 126, 209, 0.19) 0px 10px 20px, rgba(211, 84, 185, 0.23) 0px 6px 6px;
-} 
-.texto-contenido{
+}
+
+.texto-contenido {
   flex: 1;
   color: white;
 }
+
 #nombre {
   font-family: var(--text-font);
   text-align: center;
   margin-bottom: 20px;
   color: white;
   font-size: 24px;
-  }
-.texto-contenido p{
+}
+
+.texto-contenido p {
   font-family: var(--text-font);
   text-align: justify;
   color: white;
   margin-bottom: 15px;
   line-height: 1.6;
 }
+
 #misiones {
   max-width: 1400px;
   margin: 0 auto;
 }
 
+#misiones h2 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
 .misiones-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));/*Crea una cuadrícula que se adapta automáticamente al tamaño de la pantalla, sin necesidad de escribir media queries adicionales.*/
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /*Crea una cuadrícula que se adapta automáticamente al tamaño de la pantalla, sin necesidad de escribir media queries adicionales.*/
   gap: 30px;
   padding: 0 20px;
-  
+
 }
+
 .mision {
   background: linear-gradient(135deg, #75296e 0%, #764ba2 100%);
   border-radius: 15px;
@@ -185,28 +214,36 @@ main {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 .mision:hover {
-transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
+  transform: translateY(-5px);
+  /*Mueve un elemento en el eje Y (vertical)*/
 }
+
 .mision-encabezado {
   padding: 20px 20px 15px 20px;
 }
+
 .mision h3 {
   color: white;
   font-size: 1.4em;
   margin-bottom: 12px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.xp, .dificultad {
+
+.xp,
+.dificultad {
   color: #ffffff;
   font-weight: bold;
   font-size: 0.85em;
 }
+
 .dificultad {
   padding: 5px 10px;
   border-radius: 5px;
@@ -225,12 +262,15 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   height: 100%;
   object-fit: cover;
 }
+
 .dificultad.baja {
   background: rgba(76, 175, 80, 0.8);
 }
+
 .dificultad.media {
   background: rgba(232, 229, 88, 0.8);
 }
+
 .dificultad.alta {
   background: rgba(235, 43, 43, 0.8);
 }
@@ -245,46 +285,33 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   line-height: 1.6;
   font-family: var(--text-font);
 }
+
 .mision:hover .descripcion {
   max-height: 300px;
   padding: 20px;
 }
+
 .toggle-descripcion {
   display: none;
 }
+
 .toggle-label {
   display: none;
 }
-/*
-@media (max-width: 768px) {
-.toggle-label {
-  display: block;
-}
 
-.mision:hover .descripcion {
-  max-height: 0;
-  padding: 0 20px;
-}
-}
-.dificultad.media {
-  background: rgba(255, 152, 0, 0.8);
-}
-
-.dificultad.alta {
-  background: rgba(244, 67, 54, 0.8);
-}*/
 #habilidades {
   padding: 60px 20px;
   max-width: 900px;
   margin: 0 auto;
   scroll-margin-top: 100px;
 }
+
 #habilidades h2 {
   font-family: var(--font-family);
   text-align: center;
-  margin-bottom: 50px;  /* Aumentado de 40px a 50px */
+  margin-bottom: 50px;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /* Lista de habilidades */
@@ -292,9 +319,9 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   display: flex;
   flex-direction: column;
   gap: 20px;
-  list-style: none;/*nuevo*/
-  max-width: 900px;/*nuevo*/
-  margin: 0;/*nuevo*/
+  list-style: none;
+  max-width: 900px;
+  margin: 0;
 }
 
 .habilidad {
@@ -336,20 +363,17 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   flex-shrink: 0;
 }
 
-/* Icono para habilidades desbloqueadas */
 .habilidad.desbloqueada .icono-habilidad {
   background: linear-gradient(135deg, #667eea, #764ba2);
   border: 4px solid #e8e0ea;
   box-shadow: 0 0 20px rgba(167, 52, 177, 0.5);
 }
 
-/* Icono para habilidades bloqueadas */
 .habilidad.bloqueada .icono-habilidad {
   background: linear-gradient(135deg, #4a4a5e, #2c2c3e);
   border: 4px solid #6b6b7e;
 }
 
-/* Información de la habilidad */
 .info-habilidad {
   flex: 1;
 }
@@ -364,11 +388,10 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
 .info-habilidad p {
   font-family: var(--text-font);
   color: #ccc;
-  margin: 0;/*0 0 10px 0*/
+  margin: 0;
   font-size: 0.9em;
 }
 
-/* Estado de la habilidad */
 .estado {
   font-family: var(--text-font);
   font-weight: bold;
@@ -376,22 +399,19 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   padding: 5px 12px;
   border-radius: 15px;
   display: inline-block;
-  white-space: nowrap;/*nuevo*/
+  white-space: nowrap;
 }
 
-/* Estado para completados */
 .habilidad.desbloqueada .estado {
-  background-color: #4caf50; 
+  background-color: #4caf50;
   color: white;
 }
 
-/* Estado para bloqueados */
 .habilidad.bloqueada .estado {
   background-color: #bd3131;
   color: white;
 }
 
-/* Badge de nivel */
 .nivel {
   font-family: var(--font-family);
   background-color: #667eea;
@@ -400,62 +420,55 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   border-radius: 25px;
   font-weight: bold;
   font-size: 0.9em;
-  white-space: nowrap;/*nuevo*/
- /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);*/
+  white-space: nowrap;
 }
+
 .bloqueado {
   background-color: #6b6b7e;
 }
 
-/* Para móviles */
-/*@media (max-width: 768px) {
-  .habilidad {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .nivel {
-    width: 100%;
-  }
-}*/
 #formulario {
   max-width: 600px;
   padding: 25px;
   margin: 40px auto;
   width: 90%;
   background-color: rgba(29, 20, 30, 0.9);
-
 }
+
 #formulario fieldset {
   border: 5px groove var(--primary-color);
   padding: 20px;
 }
+
 legend {
   color: white;
   font-family: var(--font-family);
-  /*justify-content: center;*/
-  padding: 0 10px;/*nuevo*/
+  padding: 0 10px;
   font-size: 2.0em;
-  /*text-align: center;*/
 }
+
 label {
   color: white;
   font-family: var(--text-font);
-  display: block;/*nuevo*/
-  margin-top: 15px;/*nuevo*/
-  margin-bottom: 5px;/*nuevo*/
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
-input, textarea {/*nuevo*/
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 2px solid var(--second-color);
   background: white;
   font-family: var(--text-font);
 }
+
 textarea {
   resize: vertical;
 }
-.btn1 {/*nuevo*/
+
+.btn1 {
   width: 100%;
   padding: 12px;
   margin-top: 15px;
@@ -467,10 +480,12 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .btn1:hover {
   background-color: #ad59b6;
- 
+
 }
+
 #contacto {
   display: flex;
   align-items: center;
@@ -482,34 +497,41 @@ textarea {
   background-color: rgb(87, 22, 90);
   margin: 40px 0 0 0;
 }
+
 #contacto h2 {
   font-family: var(--font-family);
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 30px;
   color: white;
 }
+
 .links1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  list-style: none; 
+  list-style: none;
 }
-.links1 a{
+
+.links1 a {
   display: block;
   transition: transform 0.3s;
 }
-.links1 a:hover{
+
+.links1 a:hover {
   transform: scale(1.3);
 }
+
 .links1 img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
+
 footer {
   margin-top: 0px;
 }
+
 .nav-cookies {
   display: flex;
   align-items: center;
@@ -517,25 +539,29 @@ footer {
   padding: 20px 30px;
   width: 100%;
   gap: 20px;
-  background-color: rgb(0, 0, 0);  
+  background-color: rgb(0, 0, 0);
 }
-.footer-logo img{
+
+.footer-logo img {
   height: 80px;
 }
-.derechos{
+
+.derechos {
   color: white;
   white-space: nowrap;
   font-size: 0.85em;
 }
- 
+
 .languageList {
   display: flex;
   list-style: none;
   gap: 30px;
 }
+
 .languageList li {
   list-style: none;
 }
+
 .languageList a {
   color: white;
   font-family: var(--text-font);
@@ -543,15 +569,18 @@ footer {
   font-size: 0.85em;
 
 }
+
 .languageList a:hover {
   color: white;
 }
+
 .language-select label {
   color: white;
   font-family: var(--text-font);
   font-size: 0.85em;
   margin-right: 10px;
 }
+
 #language {
   background-color: black;
   color: white;
@@ -561,275 +590,258 @@ footer {
   font-family: var(--text-font);
   cursor: pointer;
 }
+
 #language:hover {
   border-color: #DB8DE0;
 }
+
 #language option {
   background-color: rgb(18, 18, 19);
   color: white;
 }
+
 @media (max-width: 1024px) {
-    .nav-links {
-        gap: 25px;
-    }
-
-    .nav-links a {
-        font-size: 18px;
-    }
-
-    #hero {
-        gap: 25px;
-    }
-
-    #hero h1 {
-        font-size: 32px;
-    }
-
-    .rectangulo {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #nombre {
-        text-align: center;
-    }
-
-    .texto-contenido p {
-        text-align: center;
-    }
-
-    .nav-cookies {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer-logo {
-        order: 1;
-        width: 100%;
-        text-align: center;
-    }
-
-    .derechos {
-        order: 2;
-        width: 100%;
-        text-align: center;
-    }
-
-    .languageList {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .language-select {
-        order: 4;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Móviles */
-@media (max-width: 768px) {
-    /* Navegación móvil */
-    .navbar {
-        height: 70px;
-        padding: 10px 15px;
-    }
-
-    .logo img {
-        height: 50px;
-    }
-
-    .nav-links {
-        gap: 15px;
-    }
-
-    .nav-links a {
-        font-size: 14px;
-    }
-
-    /* Hero móvil */
-    #hero {
-        padding: 30px 15px;
-        gap: 20px;
-    }
-
-    #hero h1 {
-        font-size: 24px;
-    }
-
-    #hero .btn {
-        font-size: 20px;
-        padding: 12px 20px;
-        gap: 10px;
-    }
-
-    #hero .mando {
-        width: 35px;
-        height: 35px;
-    }
-    #perfil h2 {
-      font-size: 1.5em;
-    }
-
-    /* Perfil móvil */
-    .rectangulo {
-        padding: 20px;
-        gap: 20px
-    }
-    .contenedor img{
-      height: 300px;
-      width: 225px;
+  .nav-links {
+    gap: 25px;
   }
-  #nombre {
-    font-size: 1.2em;
+
+  .nav-links a {
+    font-size: 18px;
   }
-  .texto-contenido p {
-    font-size: 0.9em;
+
+  #hero {
+    gap: 25px;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  .rectangulo {
+    flex-direction: column;
     text-align: center;
   }
-  #misiones h2 {
-    font-size: 1.5em;
+
+  #nombre {
+    text-align: center;
   }
-  .misiones-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
+
+  .texto-contenido p {
+    text-align: center;
   }
-  .mision {
-    max-width: 100%;
-  }
-  .mision h3 {
-    font-size: 1.2em;
-  }
-  .xp, .dificultad {
-    font-size: 0.75em;
-  }
-  #habilidades h2 {
-    font-size: 1.5em;
-  }
-.habilidad {
-  flex-direction: column;
-  text-align: center;
-  gap: 15px;
-}
-.icono-habilidad {
-        width: 60px;  /* Icono más pequeño */
-        height: 60px;
-        font-size: 30px;  /* Emoji más pequeño */
-    }
 
-    .info-habilidad h3 {
-        font-size: 1.1em;  /* Títulos más pequeños */
-    }
-
-    .info-habilidad p {
-        font-size: 0.85em;  /* Descripciones más pequeñas */
-    }
-
-    .estado {
-        font-size: 0.75em;  /* Estado más pequeño */
-        padding: 4px 10px;
-    }
-
-    .nivel {
-        font-size: 0.8em;  /* Badge nivel más pequeño */
-        padding: 8px 15px;
-        width: auto;  /* Se ajusta al contenido */
-    }
-
-    /* 6. FORMULARIO EN MÓVILES */
-    #formulario {
-        padding: 15px;  /* Menos padding */
-        margin: 30px auto;
-    }
-
-    legend {
-        font-size: 1.5em;  /* Título más pequeño */
-    }
-
-    input, textarea {
-        font-size: 14px;  /* Letras más pequeñas en inputs */
-    }
-
-    /* 7. CONTACTO EN MÓVILES */
-    #contacto {
-        padding: 30px 20px;  /* Menos padding */
-    }
-
-    #contacto h2 {
-        font-size: 1.5em;  /* Título más pequeño */
-        margin-bottom: 20px;
-    }
-
-    .links1 {
-        gap: 25px;  /* Menos espacio entre iconos */
-        flex-wrap: wrap;  /* Permite que se apilen si no caben */
-    }
-
-    .links1 img {
-        width: 35px;  /* Iconos más pequeños */
-        height: 35px;
-    }
-
-    /* 8. FOOTER EN MÓVILES */
-    .footer-logo img {
-        height: 60px;  /* Logo más pequeño en footer */
-    }
-
-    .derechos {
-        font-size: 0.75em;  /* Copyright más pequeño */
-    }
-
-    .languageList {
-        gap: 15px;  /* Menos espacio entre políticas */
-        flex-direction: column;  /* Se apilan verticalmente */
-    }
-
-    .languageList a {
-        font-size: 0.8em;
-    }
-
-    .language-select label {
-        font-size: 0.8em;
-    }
-} 
-
-/*@media (max-width: 1024px) {
   .nav-cookies {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
   }
-  
+
   .footer-logo {
     order: 1;
     width: 100%;
     text-align: center;
   }
-  
-  .footer-logo img {
-    margin: 0 auto;
-  }
-  
-  .copyright {
+
+  .derechos {
     order: 2;
     width: 100%;
     text-align: center;
   }
-  
+
   .languageList {
     order: 3;
     width: 100%;
     justify-content: center;
   }
-  
-  .language-selector {
+
+  .language-select {
     order: 4;
     width: 100%;
-    justify-content: center;
+    text-align: center;
   }
-}*/
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+
+  /* Navegación móvil */
+  .navbar {
+    height: 70px;
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  /* Hero móvil */
+  #hero {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero .btn {
+    font-size: 20px;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  #hero .mando {
+    width: 35px;
+    height: 35px;
+  }
+
+  #perfil h2 {
+    font-size: 1.5em;
+  }
+
+  /* Perfil móvil */
+  .rectangulo {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contenedor img {
+    height: 300px;
+    width: 225px;
+  }
+
+  #nombre {
+    font-size: 1.2em;
+  }
+
+  .texto-contenido p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  #misiones h2 {
+    font-size: 1.5em;
+  }
+
+  .misiones-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mision {
+    max-width: 100%;
+  }
+
+  .mision h3 {
+    font-size: 1.2em;
+  }
+
+  .xp,
+  .dificultad {
+    font-size: 0.75em;
+  }
+
+  #habilidades h2 {
+    font-size: 1.5em;
+  }
+
+  .habilidad {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .icono-habilidad {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .info-habilidad h3 {
+    font-size: 1.1em;
+  }
+
+  .info-habilidad p {
+    font-size: 0.85em;
+  }
+
+  .estado {
+    font-size: 0.75em;
+    padding: 4px 10px;
+  }
+
+  .nivel {
+    font-size: 0.8em;
+    padding: 8px 15px;
+    width: auto;
+  }
+
+  /* 6. FORMULARIO EN MÓVILES */
+  #formulario {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  legend {
+    font-size: 1.5em;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  /* 7. CONTACTO EN MÓVILES */
+  #contacto {
+    padding: 30px 20px;
+  }
+
+  #contacto h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .links1 {
+    gap: 25px;
+    /* Menos espacio entre iconos */
+    flex-wrap: wrap;
+  }
+
+  .links1 img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* 8. FOOTER EN MÓVILES */
+  .footer-logo img {
+    height: 60px;
+  }
+
+  .derechos {
+    font-size: 0.75em;
+  }
+
+  .languageList {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .languageList a {
+    font-size: 0.8em;
+  }
+
+  .language-select label {
+    font-size: 0.8em;
+  }
+}
+
 
 /*
 Separación:
