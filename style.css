@@ -278,7 +278,7 @@ main {
   overflow: hidden;
   padding: 0;
   color: white;
-  background: black;
+  background: rgb(46, 44, 44);
   transition: max-height 0.4s ease, padding 0.4s ease;
   line-height: 1;
   font-family: var(--text-font);
