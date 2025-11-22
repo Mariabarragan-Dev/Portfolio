@@ -115,9 +115,10 @@ main {
  
 }
 #perfil, #misiones, #contacto #habilidades h2 {
-  font-family: 2em;
+  font-size: 2em;
   margin-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .perfil {
   display: flex;
@@ -278,13 +279,13 @@ transform: translateY(-5px); /*Mueve un elemento en el eje Y (vertical)*/
   margin: 0 auto;
   scroll-margin-top: 100px;
 }
-/*#habilidades h2 {
+#habilidades h2 {
   font-family: var(--font-family);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;  /* Aumentado de 40px a 50px */
   color: white;
   font-size: 2em;
-}*/
+}
 
 /* Lista de habilidades */
 .habilidades-lista {
@@ -673,8 +674,104 @@ footer {
     .rectangulo {
         padding: 20px;
         gap
-    }/*incomplet*/
+    }
+    .contenedor img{
+      height: 300px;
+      width: 225px;
+  }
+  .misiones-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .mision {
+    max-width: 100%;
+  }
+.habilidad {
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.icono-habilidad {
+        width: 60px;  /* Icono más pequeño */
+        height: 60px;
+        font-size: 30px;  /* Emoji más pequeño */
+    }
 
+    .info-habilidad h3 {
+        font-size: 1.1em;  /* Títulos más pequeños */
+    }
+
+    .info-habilidad p {
+        font-size: 0.85em;  /* Descripciones más pequeñas */
+    }
+
+    .estado {
+        font-size: 0.75em;  /* Estado más pequeño */
+        padding: 4px 10px;
+    }
+
+    .nivel {
+        font-size: 0.8em;  /* Badge nivel más pequeño */
+        padding: 8px 15px;
+        width: auto;  /* Se ajusta al contenido */
+    }
+
+    /* 6. FORMULARIO EN MÓVILES */
+    #formulario {
+        padding: 15px;  /* Menos padding */
+        margin: 30px auto;
+    }
+
+    legend {
+        font-size: 1.5em;  /* Título más pequeño */
+    }
+
+    input, textarea {
+        font-size: 14px;  /* Letras más pequeñas en inputs */
+    }
+
+    /* 7. CONTACTO EN MÓVILES */
+    #contacto {
+        padding: 30px 20px;  /* Menos padding */
+    }
+
+    #contacto h2 {
+        font-size: 1.5em;  /* Título más pequeño */
+        margin-bottom: 20px;
+    }
+
+    .links1 {
+        gap: 25px;  /* Menos espacio entre iconos */
+        flex-wrap: wrap;  /* Permite que se apilen si no caben */
+    }
+
+    .links1 img {
+        width: 35px;  /* Iconos más pequeños */
+        height: 35px;
+    }
+
+    /* 8. FOOTER EN MÓVILES */
+    .footer-logo img {
+        height: 60px;  /* Logo más pequeño en footer */
+    }
+
+    .derechos {
+        font-size: 0.75em;  /* Copyright más pequeño */
+    }
+
+    .languageList {
+        gap: 15px;  /* Menos espacio entre políticas */
+        flex-direction: column;  /* Se apilan verticalmente */
+    }
+
+    .languageList a {
+        font-size: 0.8em;
+    }
+
+    .language-select label {
+        font-size: 0.8em;
+    }
+} 
 
 
 @media (max-width: 1024px) {
